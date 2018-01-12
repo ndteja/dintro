@@ -1,3 +1,21 @@
+var modal = document.getElementById('simplemodal');
+var modalbtn = document.getElementById('modalbtn');
+var closebtn = document.getElementById('closebtn')
+
+modalbtn.addEventListener('click', openmodal);
+closebtn.addEventListener('click', closemodal);
+
+
+function openmodal(){
+    modal.style.display='block';
+}
+
+function closemodal(e){
+    if(e.target == skewed){
+    modal.style.display = 'none';
+}
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     let wrapper = document.getElementById('wrapper');
     let topLayer = wrapper.querySelector('.top');
